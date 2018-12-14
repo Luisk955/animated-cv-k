@@ -27,16 +27,36 @@ document.addEventListener(`DOMContentLoaded`, (event) => {
         showNextPage(false);
     });
 
+    function animatePage(pPage) {
+        switch (true) {
+            case pPage == 0:
+                headerStart()
+                break;
+
+            case pPage == 1:
+                aboutMeStart()
+                break;
+
+            case pPage == 2:
+                educationStart()
+                break;
+
+            default:
+                break;
+        }
+    }
+
     function showNextPage(pValue) {
+        let sectionNumber = 0;
         if (pValue) {
             for (let j = 0; j < sections.length; j++) {
                 if (sections[j].classList[1] == `show`) {
                     sections[j].classList.remove(`show`)
                     sections[j].classList.add(`hide`);
-                    let sectionNumber;
+
                     if (j == (sections.length - 1)) {
-                        sections[0].classList.remove(`hide`);
-                        sections[0].classList.add(`show`);
+                        sections[sectionNumber].classList.remove(`hide`);
+                        sections[sectionNumber].classList.add(`show`);
                     } else {
                         sectionNumber = j + 1;
                         sections[sectionNumber].classList.remove(`hide`);
@@ -52,8 +72,9 @@ document.addEventListener(`DOMContentLoaded`, (event) => {
                     sections[j].classList.add(`hide`);
                     let sectionNumber;
                     if (j == 0) {
-                        sections[(sections.length - 1)].classList.remove(`hide`);
-                        sections[(sections.length - 1)].classList.add(`show`);
+                        sectionNumber = sections.length - 1;
+                        sections[sectionNumber].classList.remove(`hide`);
+                        sections[sectionNumber].classList.add(`show`);
                     } else {
                         sectionNumber = j - 1;
                         sections[sectionNumber].classList.remove(`hide`);
@@ -61,9 +82,10 @@ document.addEventListener(`DOMContentLoaded`, (event) => {
                     }
                     j = sections.length;
                 }
-
             }
         }
+
+        animatePage(sectionNumber);
     }
 
 
