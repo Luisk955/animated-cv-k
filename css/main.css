@@ -29,7 +29,7 @@ body {
 }
 
 #controls {
-    margin-top: 11em;
+    margin-top: 20em;
 }
 
 .hide {
@@ -52,7 +52,7 @@ main {
 }
 
 .header-image-container {
-    height: 91.55vh;
+    height: 100vh;
     background: url(../images/headerbg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,21 +123,34 @@ main {
     justify-content: center;
 }
 
-.education-box1,
-.education-box2 {
+.education-box1 {
     margin: 0 auto;
     width: 30%;
     height: 40%;
-    background: rgba(54, 54, 54, 0.932);
+    background: white;
     opacity: 1;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
 }
 
 #educationSection {
-    height: 94.2vh !important;
+    height: 100vh !important;
+    background-color: #828282;
+}
+
+.contact-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cf-contact{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .education-row {
@@ -146,8 +159,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 50%;
-    justify-content: center;
+    height: 45%;
     margin: 0 auto;
 }
 
@@ -181,7 +193,7 @@ main {
 
 #skillsSection {
     background: #000;
-    height: 90vh;
+    height: 100vh;
 }
 
 #skillsSection .mainmaincontainer {
@@ -373,4 +385,16 @@ main {
     font-size: 10px;
     bottom: 10px;
     left: 35%;
+}
+
+
+#contactSection {
+    height: 100vh;
+    background-color: black;
+}
+
+
+.h2-contact {
+    display: flex;
+    justify-content: center;
 }
