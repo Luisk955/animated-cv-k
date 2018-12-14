@@ -15,7 +15,6 @@
 <body>
 
     <main>
-
         <section class="row fixed-top" id="controls">
             <div class="col-2">
                 <button class="trasparent" id="buttonPrevoius"><img src="./images/back.png" alt="back arrow bitches"
@@ -44,7 +43,7 @@
             </div>
         </section>
 
-        <section id="startSection" class="curriculumSection show">
+        <section id="startSection" class="curriculumSection hide">
             <div class="container-fluid">
                 <div class="header-image-container">
                     <div class="letters-box" id="headerRect">
@@ -127,37 +126,44 @@
             </div>
         </section>
 
-        <section id="skillsSection" class="curriculumSection hide">
+        <section id="skillsSection" class="curriculumSection show">
             <div class="col-12">
                 <div class="justify-content-center">
-                    <div class="mainmaincontainer">
-                        <div class="maincontainer">
-                            <div class="progress-container" onclick="css3RadialProgressBar()">
-                                <p id="progreso">Cick to view</p>
+                    <div class="skillsContainer">
+
+                        <div class="skillContainer">
+                            <div class="progress-container">
                                 <div class="progress-circle" id="progress-circle" aria-valuenow="0" aria-valuemin="0"
-                                    aria-valuemax="100"><span class="p-h"></span><span class="p-f"></span><span id="progress"><img
-                                            class="ima" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" /></span></div>
+                                    aria-valuemax="100">
+                                    <span id="progress">
+                                        <img width="80%" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" />
+                                    </span>
+                                </div>
                             </div>
-                            <style id="progress-style" type="text/css"></style>
                         </div>
-                        <div class="maincontainer01">
-                            <div class="progress-container01" onclick="css3RadialProgressBar01()">
-                                <p id="progreso01">Cick to view</p>
-                                <div class="progress-circle01" id="progress-circle01" aria-valuenow01="0"
-                                    aria-valuemin01="0" aria-valuemax01="100"><span class="p-h01"></span><span class="p-f01"></span>
-                                    <span id="progress01"><img class="ima01" src="https://i1.wp.com/ambientologia.com.br/wp-content/uploads/2016/03/css-logo.png?ssl=1" /></span></div>
+
+                        <div class="skillContainer">
+                            <div class="progress-container">
+                                <div class="progress-circle" id="progress-circle" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <span id="progress">
+                                        <img width="80%" src="https://i1.wp.com/ambientologia.com.br/wp-content/uploads/2016/03/css-logo.png?ssl=1" />
+                                    </span>
+                                </div>
                             </div>
-                            <style id="progress-style01" type="text/css"></style>
                         </div>
-                        <div class="maincontainer02">
-                            <div class="progress-container02" onclick="css3RadialProgressBar02()">
-                                <p id="progreso02">Cick to view</p>
-                                <div class="progress-circle02" id="progress-circle02" aria-valuenow01="0"
-                                    aria-valuemin02="0" aria-valuemax02="100"><span class="p-h02"></span><span class="p-f02"></span>
-                                    <span id="progress02"><img class="ima02" src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png" /></span></div>
+
+                        <div class="skillContainer">
+                            <div class="progress-container">
+                                <div class="progress-circle" id="progress-circle" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <span id="progress">
+                                        <img width="80%" src="https://www.javacodegeeks.com/wp-content/uploads/2016/01/javascript-shield.png" />
+                                    </span>
+                                </div>
                             </div>
-                            <style id="progress-style02" type="text/css"></style>
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -184,11 +184,21 @@ main {
     height: 90vh;
 }
 
-#skillsSection .mainmaincontainer {
+#skillsSection .skillsContainer {
     margin-top: 13em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#skillsSection .skillsContainer .skillContainer {
+    background: #3F535E;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    width: 300px;
 }
 
 
