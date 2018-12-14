@@ -94,7 +94,6 @@ document.addEventListener(`DOMContentLoaded`, (event) => {
         aboutMe = document.getElementById(`aboutMe`),
         education = document.getElementById(`education`),
         skills = document.getElementById(`skills`),
-        projects = document.getElementById(`projects`),
         contact = document.getElementById(`contact`);
 
 
@@ -199,11 +198,7 @@ document.addEventListener(`DOMContentLoaded`, (event) => {
             ease: Elastic.easeOut
         };
         TweenMax.from(aboutMeTitle, 4, aboutMeTitleOptions);
-
-
     }
-
-
 
 
 
